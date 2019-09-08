@@ -7,5 +7,4 @@ Rails.application.routes.draw do
 
   root 'site#index'
   
-  root 'site#index'
 end

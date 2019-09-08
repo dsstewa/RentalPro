@@ -323,3 +323,12 @@ Processing by SiteController#index as HTML
 Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-09-08 09:26:43 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 252ms (Views: 246.8ms | ActiveRecord: 0.0ms)
+
+
