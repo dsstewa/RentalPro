@@ -1,4 +1,14 @@
 class UsersController < ApplicationController
-    belongs_to :company
-    has_many :projects, through: :companies
+   
+    
+    def new
+        @user = User.new
+    end
+    
+    def create
+
+    end
+
+
+
 end
