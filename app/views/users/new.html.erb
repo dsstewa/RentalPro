@@ -16,5 +16,10 @@
   <%= u.label :password_confirmation%>
   <%= u.text_field :password_confirmation%>
   <br>
+  <%= u.label "Please select your company"%>
+  <%= u.collection_select :company_id, Company.all, :id, :name %>
+  <br>
   <%= u.submit%>
 <%end%>
+
+<%= link_to "Don't See Your Company? Create it!", new_company_path %>
