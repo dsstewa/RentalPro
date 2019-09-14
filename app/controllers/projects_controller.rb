@@ -2,12 +2,15 @@ class ProjectsController < ApplicationController
     
     def new
         @project = Project.new
+        @project.build_projectmanager
+        
+        
     end
 
     def create
-        binding.pry
         @project = Project.new(project_params)
         @project.save
+        binding.pry
         redirect_to project_path @project
       
     end
@@ -19,7 +22,16 @@ class ProjectsController < ApplicationController
     private 
 
     def project_params
-       params.require(:project).permit(:name, :client_name, :address, :project_manager, :company_id)
+       params.require(:project).permit(
+           :name, 
+           :client_name, 
+           :address,
+           :company_id,
+           :company_id,
+           projectmanager_attributes: [
+               :user_id
+           ]
+           )
     end
 
 

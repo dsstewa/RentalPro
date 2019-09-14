@@ -11,10 +11,12 @@
   <%= u.label :address %>
   <%= u.text_field :address %>
   <br>
-  <%= u.label :project_manager%>
-  
+  <%= u.fields_for :projectmanager do |p|%>
+  <%= p.label "Project Manager"%>
+  <%= p.collection_select :user_id, User.all, :id, :name %>
+    <%end%>
   <br>
-  <%= u.collection_select :project_manager, User.all, :id, :name %>
+  
   <br>
   <%= u.hidden_field :company_id, value: current_user.company.id%>
   <%= u.submit%>

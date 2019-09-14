@@ -5145,3 +5145,1387 @@ Migrating to CreateProjectmanagers (20190914154534)
   ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/" for ::1 at 2019-09-14 09:50:27 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 1536ms (Views: 1526.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for ::1 at 2019-09-14 09:50:31 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/views/users/new.html.erb:20
+  Rendered users/new.html.erb within layouts/application (9.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 47ms (Views: 36.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/companies/new" for ::1 at 2019-09-14 09:50:33 -0600
+Processing by CompaniesController#new as HTML
+  Rendering companies/new.html.erb within layouts/application
+  Rendered companies/new.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 38ms (Views: 29.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/companies" for ::1 at 2019-09-14 09:50:39 -0600
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c3MzdkbL3IMo35g4vu4Rf8Gc6yddqplr67ZxNNmiDcy10Ucgcmob6QDnCFuiPdzSKUeJcYsmo4gcuq0n6hKt6w==", "company"=>{"name"=>"Kiewit", "address"=>"1234", "phone_number"=>"21231231"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/companies_controller.rb:9
+  [1m[36mCompany Create (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kiewit"], ["address", "1234"], ["phone_number", "21231231"], ["created_at", "2019-09-14 15:50:39.483657"], ["updated_at", "2019-09-14 15:50:39.483657"]]
+  ↳ app/controllers/companies_controller.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/companies_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 09:50:39 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for ::1 at 2019-09-14 09:50:41 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/views/users/new.html.erb:20
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2019-09-14 09:50:54 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7iywOxgnJoA041q6dzXoujHyWo9zfpqLoVOsmtSQooXhXb6Seu0lE00ZKAAicH5AtXI2eaUHtQg3DCKbUa0sew==", "user"=>{"name"=>"David", "phone_number"=>"1231312", "email"=>"david@david.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "company_id"=>"1"}, "commit"=>"Create User"}
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "email", "phone_number", "created_at", "updated_at", "company_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "David"], ["password_digest", "$2a$12$g89TcyKkps39FKQDxKGp3eCkxxpHZyye1ENN4NtdMR1UrMPEimcmC"], ["email", "david@david.com"], ["phone_number", "1231312"], ["created_at", "2019-09-14 15:50:54.957064"], ["updated_at", "2019-09-14 15:50:54.957064"], ["company_id", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 235ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/users/1" for ::1 at 2019-09-14 09:50:54 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:1
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 09:50:57 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `project_manager' for #<Project:0x00007f91a16704a0>
+Did you mean?  projectmanager
+               projectmanager=
+               projectmanager_id):
+    14:   <%= u.label :project_manager%>
+    15:   
+    16:   <br>
+    17:   <%= u.collection_select :project_manager, User.all, :id, :name %>
+    18:   <br>
+    19:   <%= u.hidden_field :company_id, value: current_user.company.id%>
+    20:   <%= u.submit%>
+  
+app/views/projects/new.html.erb:17:in `block in _app_views_projects_new_html_erb___4594788927115877947_70131727876320'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb___4594788927115877947_70131727876320'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "assets"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "assets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "osr" boolean DEFAULT 0, "rental_company" varchar, "make" varchar, "type" varchar, "eqclass" varchar, "rental_rate_day" float, "rental_rate_week" float, "rental_rate_month" float, "discount" float, "address" varchar, "company_id" integer, "project_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_assets_on_company_id" ON "assets" ("company_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_assets_on_project_id" ON "assets" ("project_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "companies"[0m
+  ↳ db/schema.rb:35
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "companies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone_number" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "projectmanagers"[0m
+  ↳ db/schema.rb:43
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "projectmanagers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "projects"[0m
+  ↳ db/schema.rb:48
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "projects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "client_name" varchar, "address" varchar, "projectmanager_id" integer, "company_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:48
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_projects_on_company_id" ON "projects" ("company_id")[0m
+  ↳ db/schema.rb:48
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_projects_on_projectmanager_id" ON "projects" ("projectmanager_id")[0m
+  ↳ db/schema.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sessions"[0m
+  ↳ db/schema.rb:60
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "sessions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:60
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:65
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "password_digest" varchar, "email" varchar, "phone_number" varchar, "admin" boolean DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "company_id" integer)[0m
+  ↳ db/schema.rb:65
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_users_on_company_id" ON "users" ("company_id")[0m
+  ↳ db/schema.rb:65
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190914154534)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190908141606),
+(20190908141630),
+(20190908140633),
+(20190908141636),
+(20190908151139);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-14 15:51:23.196077"], ["updated_at", "2019-09-14 15:51:23.196077"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "assets"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "assets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "osr" boolean DEFAULT 0, "rental_company" varchar, "make" varchar, "type" varchar, "eqclass" varchar, "rental_rate_day" float, "rental_rate_week" float, "rental_rate_month" float, "discount" float, "address" varchar, "company_id" integer, "project_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_assets_on_company_id" ON "assets" ("company_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_assets_on_project_id" ON "assets" ("project_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "companies"[0m
+  ↳ db/schema.rb:35
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "companies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "phone_number" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "projectmanagers"[0m
+  ↳ db/schema.rb:43
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "projectmanagers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "projects"[0m
+  ↳ db/schema.rb:48
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "projects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "client_name" varchar, "address" varchar, "projectmanager_id" integer, "company_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:48
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX "index_projects_on_company_id" ON "projects" ("company_id")[0m
+  ↳ db/schema.rb:48
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_projects_on_projectmanager_id" ON "projects" ("projectmanager_id")[0m
+  ↳ db/schema.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "sessions"[0m
+  ↳ db/schema.rb:60
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "sessions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:60
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:65
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "password_digest" varchar, "email" varchar, "phone_number" varchar, "admin" boolean DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "company_id" integer)[0m
+  ↳ db/schema.rb:65
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_users_on_company_id" ON "users" ("company_id")[0m
+  ↳ db/schema.rb:65
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190914154534)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190908141606),
+(20190908141630),
+(20190908140633),
+(20190908141636),
+(20190908151139);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-14 15:51:23.226358"], ["updated_at", "2019-09-14 15:51:23.226358"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-09-14 15:51:23.229467"], ["key", "environment"]]
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+Migrating to CreateProjectmanagers (20190914154534)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "projectmanagers"[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190914154534"]]
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+Migrating to CreateProjectmanagers (20190914154534)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190914154534_create_projectmanagers.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "projectmanagers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190914154534_create_projectmanagers.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_projectmanagers_on_user_id" ON "projectmanagers" ("user_id")[0m
+  ↳ db/migrate/20190914154534_create_projectmanagers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190914154534"]]
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/projects/new" for ::1 at 2019-09-14 09:55:13 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered projects/new.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `company' for nil:NilClass):
+    16:   <br>
+    17:   
+    18:   <br>
+    19:   <%= u.hidden_field :company_id, value: current_user.company.id%>
+    20:   <%= u.submit%>
+    21: <%end%>
+  
+app/views/projects/new.html.erb:19:in `block in _app_views_projects_new_html_erb___638342588878896327_70194471297880'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb___638342588878896327_70194471297880'
+Started GET "/projects/new" for ::1 at 2019-09-14 09:56:13 -0600
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Started GET "/users/new" for ::1 at 2019-09-14 09:56:29 -0600
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendered projects/new.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 22863ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `company' for nil:NilClass):
+    16:   <br>
+    17:   
+    18:   <br>
+    19:   <%= u.hidden_field :company_id, value: current_user.company.id%>
+    20:   <%= u.submit%>
+    21: <%end%>
+  
+app/views/projects/new.html.erb:19:in `block in _app_views_projects_new_html_erb___638342588878896327_70194471373940'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb___638342588878896327_70194471373940'
+Started GET "/" for ::1 at 2019-09-14 09:56:36 -0600
+Processing by UsersController#new as HTML
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering users/new.html.erb within layouts/application
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 275ms (Views: 261.5ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/views/users/new.html.erb:20
+  Rendered users/new.html.erb within layouts/application (270.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 324ms (Views: 310.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 09:56:38 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for ::1 at 2019-09-14 09:56:40 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/views/users/new.html.erb:20
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/companies/new" for ::1 at 2019-09-14 09:56:43 -0600
+Processing by CompaniesController#new as HTML
+  Rendering companies/new.html.erb within layouts/application
+  Rendered companies/new.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 38ms (Views: 29.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/companies" for ::1 at 2019-09-14 09:56:49 -0600
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qwww1CcIV7vATYLalogd0UUS80TB3PPHnP/M4xFTETKFrkSCE6mQ0eh1ErmKW9B8rcmREhdQySRr8xDwIuOxFQ==", "company"=>{"name"=>"Kiewit", "address"=>"12123", "phone_number"=>"asdfasdf"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/companies_controller.rb:9
+  [1m[36mCompany Create (0.5ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kiewit"], ["address", "12123"], ["phone_number", "asdfasdf"], ["created_at", "2019-09-14 15:56:49.212342"], ["updated_at", "2019-09-14 15:56:49.212342"]]
+  ↳ app/controllers/companies_controller.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/companies_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 09:56:49 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for ::1 at 2019-09-14 09:56:52 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/views/users/new.html.erb:20
+  Rendered users/new.html.erb within layouts/application (5.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2019-09-14 09:57:02 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/FrRZXwt5LP9Tjtsk2lvkbp6gb1MBOsLC7HVcXo20pbzK9/MHufnIIS0SdbGLPlrPvrtS5p9xIid7ltw/wtcaA==", "user"=>{"name"=>"David", "phone_number"=>"1231231", "email"=>"david@david.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "company_id"=>"1"}, "commit"=>"Create User"}
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "password_digest", "email", "phone_number", "created_at", "updated_at", "company_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "David"], ["password_digest", "$2a$12$GVX6L0yTT20jBuay7e0AHOg9Styzsb7ngS4xzlrdV.2YsRdWpeza2"], ["email", "david@david.com"], ["phone_number", "1231231"], ["created_at", "2019-09-14 15:57:03.208356"], ["updated_at", "2019-09-14 15:57:03.208356"], ["company_id", 1]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 238ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/users/1" for ::1 at 2019-09-14 09:57:03 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:1
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 09:57:04 -0600
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ (pry):4
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:19
+  Rendered projects/new.html.erb within layouts/application (11.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 20977ms (Views: 44.8ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/projects" for ::1 at 2019-09-14 09:57:43 -0600
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P9ItgefvamJNgAox3DrzON4td2YSfyHSFXe0L5HFrTXYxldd+I1/rswcK2SvjmcsxZQOu3nRlYpxRZf0YFw9gg==", "project"=>{"name"=>"Home", "client_name"=>"asdf", "address"=>"asdfasd", "company_id"=>"1"}, "commit"=>"Create Project"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ (pry):5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Started GET "/projects/new" for ::1 at 2019-09-14 09:58:40 -0600
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/projects_controller.rb:11
+Completed 500 Internal Server Error in 60044ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"projects", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/projects_controller.rb:12:in `create'
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `project_manager' for #<Project:0x00007faedb023410>
+Did you mean?  projectmanager
+               projectmanager=
+               projectmanager_id):
+    14:   <%= u.label :project_manager%>
+    15:   
+    16:   <br>
+    17:   <%= u.collection_select :project_manager, User.all, :id, :name %>
+    18:   <br>
+    19:   <%= u.hidden_field :company_id, value: current_user.company.id%>
+    20:   <%= u.submit%>
+  
+app/views/projects/new.html.erb:17:in `block in _app_views_projects_new_html_erb___638342588878896327_70194487805120'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb___638342588878896327_70194487805120'
+Started GET "/projects/new" for ::1 at 2019-09-14 09:59:15 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/views/projects/new.html.erb:17: syntax error, unexpected tCONSTANT, expecting ')'
+...collection_select :project User.all, :id, :name );@output_bu...
+...                           ^~~~
+/Users/davidstewart/Development/code/RentalPro/app/views/projects/new.html.erb:17: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+..._select :project User.all, :id, :name );@output_buffer.safe_...
+...                              ^):
+  
+app/views/projects/new.html.erb:17: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/projects/new.html.erb:17: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+Started GET "/projects/new" for ::1 at 2019-09-14 09:59:44 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/views/projects/new.html.erb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:19
+  Rendered projects/new.html.erb within layouts/application (29.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 79ms (Views: 76.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 09:59:57 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `project_manager' for #<Project:0x00007faed2cfe620>
+Did you mean?  projectmanager
+               projectmanager=
+               projectmanager_id):
+    14:   <%= u.label :project_manager%>
+    15:   
+    16:   <br>
+    17:   <%= u.collection_select :project_manager, Company.all, :id, :name %>
+    18:   <br>
+    19:   <%= u.hidden_field :company_id, value: current_user.company.id%>
+    20:   <%= u.submit%>
+  
+app/views/projects/new.html.erb:17:in `block in _app_views_projects_new_html_erb___638342588878896327_70194418936080'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb___638342588878896327_70194418936080'
+Started GET "/projects/new" for ::1 at 2019-09-14 10:00:30 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/views/projects/new.html.erb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:19
+  Rendered projects/new.html.erb within layouts/application (4.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 10:00:41 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/projects/new.html.erb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:19
+  Rendered projects/new.html.erb within layouts/application (4.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/projects" for ::1 at 2019-09-14 10:01:11 -0600
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XWuzKVT4hXJNvS1TY1kiyyjeRnsS6LvJtMlc818KZNooeIt38u6byEeOQOrVZ740Z5sFN04Y7vOBcxR8aFKXbw==", "project"=>{"name"=>"Sylvan Lake State Park", "client_name"=>"CPW", "address"=>"1312 Brush Creek", "projectmanager_id"=>"1", "company_id"=>"1"}, "commit"=>"Create Project"}
+Unpermitted parameter: :projectmanager_id
+Unpermitted parameter: :projectmanager_id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/projects_controller.rb:11
+Completed 500 Internal Server Error in 124221ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"projects", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/projects_controller.rb:12:in `create'
+Started POST "/projects" for ::1 at 2019-09-14 10:03:19 -0600
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XWuzKVT4hXJNvS1TY1kiyyjeRnsS6LvJtMlc818KZNooeIt38u6byEeOQOrVZ740Z5sFN04Y7vOBcxR8aFKXbw==", "project"=>{"name"=>"Sylvan Lake State Park", "client_name"=>"CPW", "address"=>"1312 Brush Creek", "projectmanager_id"=>"1", "company_id"=>"1"}, "commit"=>"Create Project"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (pry):10
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ (pry):10
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ (pry):10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (pry):11
+  [1m[36mProjectmanager Load (0.1ms)[0m  [1m[34mSELECT  "projectmanagers".* FROM "projectmanagers" WHERE "projectmanagers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ (pry):11
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ (pry):11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[36mProjectmanager Load (0.0ms)[0m  [1m[34mSELECT  "projectmanagers".* FROM "projectmanagers" WHERE "projectmanagers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/projects_controller.rb:11
+Completed 500 Internal Server Error in 916987ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"projects", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/projects_controller.rb:12:in `create'
+Started GET "/projects/new" for ::1 at 2019-09-14 10:18:41 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/projects/new.html.erb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:19
+  Rendered projects/new.html.erb within layouts/application (29.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 397177ms (Views: 72.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/1" for ::1 at 2019-09-14 10:25:23 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:1
+  Rendered users/show.html.erb within layouts/application (10.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 48ms (Views: 35.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 10:25:25 -0600
+Processing by ProjectsController#new as HTML
+Started POST "/projects" for ::1 at 2019-09-14 10:25:28 -0600
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z88FkCESyHckNJDvmI/WCyNsvedq1P32fpIeODO+ZKa63D3OhwTWzS4H/VYusUr0bCn+qzYkqMxLKFa3BOaXEw==", "project"=>{"name"=>"afdas", "client_name"=>"aSD", "address"=>"asd", "projectmanager_id"=>"1", "company_id"=>"1"}, "commit"=>"Create Project"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[36mProjectmanager Load (0.1ms)[0m  [1m[34mSELECT  "projectmanagers".* FROM "projectmanagers" WHERE "projectmanagers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:12
+Started GET "/projects/new" for ::1 at 2019-09-14 10:26:30 -0600
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+Completed 500 Internal Server Error in 61673ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"projects", :id=>nil}, missing required keys: [:id]):
+Processing by ProjectsController#new as HTML
+  
+app/controllers/projects_controller.rb:13:in `create'
+Started GET "/projects/new" for ::1 at 2019-09-14 10:26:57 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/projects/new.html.erb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:19
+  Rendered projects/new.html.erb within layouts/application (4.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 75177ms (Views: 35.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 10:28:19 -0600
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/projects/new.html.erb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:19
+  Rendered projects/new.html.erb within layouts/application (4.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 351325ms (Views: 46.9ms | ActiveRecord: 0.4ms)
+
+
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/projects/new.html.erb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:19
+  Rendered projects/new.html.erb within layouts/application (3.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 426021ms (Views: 28.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 10:32:31 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/projects/new.html.erb:17
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:19
+  Rendered projects/new.html.erb within layouts/application (38.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 921999ms (Views: 64.5ms | ActiveRecord: 1.9ms)
+
+
+Processing by ProjectsController#new as HTML
+Started GET "/projects/new" for ::1 at 2019-09-14 10:48:08 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/projects/new.html.erb:17
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:19
+  Rendered projects/new.html.erb within layouts/application (35.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 111505ms (Views: 282.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 10:55:28 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `build' for nil:NilClass):
+  
+app/controllers/projects_controller.rb:5:in `new'
+Started GET "/projects/new" for ::1 at 2019-09-14 10:59:56 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/projects/new.html.erb:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:19
+  Rendered projects/new.html.erb within layouts/application (37.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 277ms (Views: 214.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 11:00:03 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 616966ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/views/projects/new.html.erb:26: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/projects/new.html.erb:26: syntax error, unexpected end-of-input, expecting end
+Started GET "/projects/new" for ::1 at 2019-09-14 11:10:30 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/views/projects/new.html.erb:26: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/projects/new.html.erb:26: syntax error, unexpected end-of-input, expecting end
+Started GET "/projects/new" for ::1 at 2019-09-14 11:10:45 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (112.4ms)
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `field_for' for #<ActionView::Helpers::FormBuilder:0x00007febd0d22620>
+Did you mean?  fields_for):
+    11:   <%= u.label :address %>
+    12:   <%= u.text_field :address %>
+    13:   <br>
+    14:   <%= u.field_for :projectmanager do |p|%>
+    15:   <%= p.collection_select :projectmanager_id, User.all, :id, :name %>
+    16:     <%end%>
+    17:   <br>
+  
+app/views/projects/new.html.erb:14:in `block in _app_views_projects_new_html_erb__1342468200919990528_70325398685520'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb__1342468200919990528_70325398685520'
+Started GET "/projects/new" for ::1 at 2019-09-14 11:11:02 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `projectmanager_id' for #<Projectmanager:0x00007febd4afc900>
+Did you mean?  project_ids):
+    12:   <%= u.text_field :address %>
+    13:   <br>
+    14:   <%= u.fields_for :projectmanager do |p|%>
+    15:   <%= p.collection_select :projectmanager_id, User.all, :id, :name %>
+    16:     <%end%>
+    17:   <br>
+    18:   
+  
+app/views/projects/new.html.erb:15:in `block (2 levels) in _app_views_projects_new_html_erb__1342468200919990528_70325431185900'
+app/views/projects/new.html.erb:14:in `block in _app_views_projects_new_html_erb__1342468200919990528_70325431185900'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb__1342468200919990528_70325431185900'
+Started GET "/projects/new" for ::1 at 2019-09-14 11:11:15 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:20
+  Rendered projects/new.html.erb within layouts/application (36.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 11:11:29 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:20
+  Rendered projects/new.html.erb within layouts/application (3.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 11:11:42 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:20
+  Rendered projects/new.html.erb within layouts/application (3.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 11:12:49 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `company_id' for #<Projectmanager:0x00007febd4ade518>):
+    13:   <br>
+    14:   <%= u.fields_for :projectmanager do |p|%>
+    15:   <%= p.label "Project Manager"%>
+    16:   <%= p.collection_select :company_id, Company.all, :id, :name %>
+    17:     <%end%>
+    18:   <br>
+    19:   
+  
+app/views/projects/new.html.erb:16:in `block (2 levels) in _app_views_projects_new_html_erb__1342468200919990528_70325431253580'
+app/views/projects/new.html.erb:14:in `block in _app_views_projects_new_html_erb__1342468200919990528_70325431253580'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb__1342468200919990528_70325431253580'
+Started GET "/projects/new" for ::1 at 2019-09-14 11:12:59 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/views/projects/new.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:21
+  Rendered projects/new.html.erb within layouts/application (4.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 11:13:27 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<Project:0x00007febd489a4a0>
+Did you mean?  user_ids
+               user_ids=):
+    13:   <br>
+    14:   <%= u.fields_for :projectmanager do |p|%>
+    15:   <%= p.label "Project Manager"%>
+    16:   <%= u.collection_select :user_id, User.all, :id, :name %>
+    17:     <%end%>
+    18:   <br>
+    19:   
+  
+app/views/projects/new.html.erb:16:in `block (2 levels) in _app_views_projects_new_html_erb__1342468200919990528_70325429928440'
+app/views/projects/new.html.erb:14:in `block in _app_views_projects_new_html_erb__1342468200919990528_70325429928440'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb__1342468200919990528_70325429928440'
+Started GET "/projects/new" for ::1 at 2019-09-14 11:14:13 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<Project:0x00007febd0d43640>
+Did you mean?  user_ids
+               user_ids=):
+    13:   <br>
+    14:   <%= u.fields_for :projectmanager do |p|%>
+    15:   <%= p.label "Project Manager"%>
+    16:   <%= u.collection_select :user_id, User.all, :id, :name %>
+    17:     <%end%>
+    18:   <br>
+    19:   
+  
+app/views/projects/new.html.erb:16:in `block (2 levels) in _app_views_projects_new_html_erb__1342468200919990528_70325398798720'
+app/views/projects/new.html.erb:14:in `block in _app_views_projects_new_html_erb__1342468200919990528_70325398798720'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb__1342468200919990528_70325398798720'
+Started GET "/projects/new" for ::1 at 2019-09-14 11:14:14 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<Project:0x00007febd3cd1c40>
+Did you mean?  user_ids
+               user_ids=):
+    13:   <br>
+    14:   <%= u.fields_for :projectmanager do |p|%>
+    15:   <%= p.label "Project Manager"%>
+    16:   <%= u.collection_select :user_id, User.all, :id, :name %>
+    17:     <%end%>
+    18:   <br>
+    19:   
+  
+app/views/projects/new.html.erb:16:in `block (2 levels) in _app_views_projects_new_html_erb__1342468200919990528_70325430863280'
+app/views/projects/new.html.erb:14:in `block in _app_views_projects_new_html_erb__1342468200919990528_70325430863280'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb__1342468200919990528_70325430863280'
+Started GET "/projects/new" for ::1 at 2019-09-14 11:14:14 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<Project:0x00007febcdf09b58>
+Did you mean?  user_ids
+               user_ids=):
+    13:   <br>
+    14:   <%= u.fields_for :projectmanager do |p|%>
+    15:   <%= p.label "Project Manager"%>
+    16:   <%= u.collection_select :user_id, User.all, :id, :name %>
+    17:     <%end%>
+    18:   <br>
+    19:   
+  
+app/views/projects/new.html.erb:16:in `block (2 levels) in _app_views_projects_new_html_erb__1342468200919990528_70325374589300'
+app/views/projects/new.html.erb:14:in `block in _app_views_projects_new_html_erb__1342468200919990528_70325374589300'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb__1342468200919990528_70325374589300'
+Started GET "/projects/new" for ::1 at 2019-09-14 11:14:15 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<Project:0x00007febd3a0d798>
+Did you mean?  user_ids
+               user_ids=):
+    13:   <br>
+    14:   <%= u.fields_for :projectmanager do |p|%>
+    15:   <%= p.label "Project Manager"%>
+    16:   <%= u.collection_select :user_id, User.all, :id, :name %>
+    17:     <%end%>
+    18:   <br>
+    19:   
+  
+app/views/projects/new.html.erb:16:in `block (2 levels) in _app_views_projects_new_html_erb__1342468200919990528_70325422354240'
+app/views/projects/new.html.erb:14:in `block in _app_views_projects_new_html_erb__1342468200919990528_70325422354240'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb__1342468200919990528_70325422354240'
+Started GET "/projects/new" for ::1 at 2019-09-14 11:14:15 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<Project:0x00007febd49900a8>
+Did you mean?  user_ids
+               user_ids=):
+    13:   <br>
+    14:   <%= u.fields_for :projectmanager do |p|%>
+    15:   <%= p.label "Project Manager"%>
+    16:   <%= u.collection_select :user_id, User.all, :id, :name %>
+    17:     <%end%>
+    18:   <br>
+    19:   
+  
+app/views/projects/new.html.erb:16:in `block (2 levels) in _app_views_projects_new_html_erb__1342468200919990528_70325430454820'
+app/views/projects/new.html.erb:14:in `block in _app_views_projects_new_html_erb__1342468200919990528_70325430454820'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb__1342468200919990528_70325430454820'
+Started GET "/projects/new" for ::1 at 2019-09-14 11:14:16 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<Project:0x00007febd0e687c8>
+Did you mean?  user_ids
+               user_ids=):
+    13:   <br>
+    14:   <%= u.fields_for :projectmanager do |p|%>
+    15:   <%= p.label "Project Manager"%>
+    16:   <%= u.collection_select :user_id, User.all, :id, :name %>
+    17:     <%end%>
+    18:   <br>
+    19:   
+  
+app/views/projects/new.html.erb:16:in `block (2 levels) in _app_views_projects_new_html_erb__1342468200919990528_70325399424140'
+app/views/projects/new.html.erb:14:in `block in _app_views_projects_new_html_erb__1342468200919990528_70325399424140'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb__1342468200919990528_70325399424140'
+Started GET "/projects/new" for ::1 at 2019-09-14 11:14:16 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/new.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<Project:0x00007febd4aef138>
+Did you mean?  user_ids
+               user_ids=):
+    13:   <br>
+    14:   <%= u.fields_for :projectmanager do |p|%>
+    15:   <%= p.label "Project Manager"%>
+    16:   <%= u.collection_select :user_id, User.all, :id, :name %>
+    17:     <%end%>
+    18:   <br>
+    19:   
+  
+app/views/projects/new.html.erb:16:in `block (2 levels) in _app_views_projects_new_html_erb__1342468200919990528_70325431132920'
+app/views/projects/new.html.erb:14:in `block in _app_views_projects_new_html_erb__1342468200919990528_70325431132920'
+app/views/projects/new.html.erb:4:in `_app_views_projects_new_html_erb__1342468200919990528_70325431132920'
+Started GET "/projects/new" for ::1 at 2019-09-14 11:14:21 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/projects/new.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:21
+  Rendered projects/new.html.erb within layouts/application (3.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 11:14:23 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/projects/new.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:21
+  Rendered projects/new.html.erb within layouts/application (3.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/projects" for ::1 at 2019-09-14 11:14:49 -0600
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kdOoocePDeLOYpFsnSNwNiDF+jkRVZqCF1uUq1TN/tvkwJD/YZkTWMRR/NUrHezJb4C5dU2lz7gi4dwkY5UNbg==", "project"=>{"name"=>"Sylvan Lake", "client_name"=>"asdf", "address"=>"asdf", "projectmanager_attributes"=>{"user_id"=>"1"}, "company_id"=>"1"}, "commit"=>"Create Project"}
+Unpermitted parameter: :projectmanager_attributes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:13
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/projects_controller.rb:13
+Completed 500 Internal Server Error in 322597ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"projects", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/projects_controller.rb:14:in `create'
+Started POST "/projects" for ::1 at 2019-09-14 11:20:19 -0600
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kdOoocePDeLOYpFsnSNwNiDF+jkRVZqCF1uUq1TN/tvkwJD/YZkTWMRR/NUrHezJb4C5dU2lz7gi4dwkY5UNbg==", "project"=>{"name"=>"Sylvan Lake", "client_name"=>"asdf", "address"=>"asdf", "projectmanager_attributes"=>{"user_id"=>"1"}, "company_id"=>"1"}, "commit"=>"Create Project"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (pry):11
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ (pry):11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ (pry):11
+  [1m[36mProjectmanager Create (0.5ms)[0m  [1m[32mINSERT INTO "projectmanagers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2019-09-14 17:21:05.637337"], ["updated_at", "2019-09-14 17:21:05.637337"]]
+  ↳ (pry):11
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("name", "client_name", "address", "projectmanager_id", "company_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sylvan Lake"], ["client_name", "asdf"], ["address", "asdf"], ["projectmanager_id", 1], ["company_id", 1], ["created_at", "2019-09-14 17:21:05.638717"], ["updated_at", "2019-09-14 17:21:05.638717"]]
+  ↳ (pry):11
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ (pry):11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:13
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:13
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:13
+  [1m[36mProjectmanager Create (0.3ms)[0m  [1m[32mINSERT INTO "projectmanagers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2019-09-14 17:21:32.350500"], ["updated_at", "2019-09-14 17:21:32.350500"]]
+  ↳ app/controllers/projects_controller.rb:13
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("name", "client_name", "address", "projectmanager_id", "company_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sylvan Lake"], ["client_name", "asdf"], ["address", "asdf"], ["projectmanager_id", 2], ["company_id", 1], ["created_at", "2019-09-14 17:21:32.351352"], ["updated_at", "2019-09-14 17:21:32.351352"]]
+  ↳ app/controllers/projects_controller.rb:13
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:13
+Redirected to http://localhost:3000/projects/2
+Completed 302 Found in 73060ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/projects/2" for ::1 at 2019-09-14 11:21:32 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:18
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mProjectmanager Load (0.1ms)[0m  [1m[34mSELECT  "projectmanagers".* FROM "projectmanagers" WHERE "projectmanagers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ (pry):14
+  Rendered projects/show.html.erb within layouts/application (125416.0ms)
+Completed 500 Internal Server Error in 125429ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `project_manager' for #<Project:0x00007febd4a63f98>
+Did you mean?  projectmanager
+               projectmanager=
+               projectmanager_id):
+     7: <br>
+     8: <%=@project.address%>
+     9: <br>
+    10: <%=@project.project_manager.name%>
+    11: <br>
+    12: <%=@project.company.name%>
+    13: 
+  
+app/views/projects/show.html.erb:10:in `_app_views_projects_show_html_erb__2824984478357442892_70325430850940'
+Started GET "/projects/2" for ::1 at 2019-09-14 11:24:25 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:18
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (32.0ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `project_manager' for #<Project:0x00007febd0b0a040>
+Did you mean?  projectmanager
+               projectmanager=
+               projectmanager_id):
+     7: <br>
+     8: <%=@project.address%>
+     9: <br>
+    10: <%=@project.project_manager.name%>
+    11: <br>
+    12: <%=@project.company.name%>
+    13: 
+  
+app/views/projects/show.html.erb:10:in `_app_views_projects_show_html_erb__2824984478357442892_70325397652460'
+Started GET "/projects/2" for ::1 at 2019-09-14 11:24:34 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:18
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (265.9ms)
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `project_manager' for #<Project:0x00007febd4a7b5f8>
+Did you mean?  projectmanager
+               projectmanager=
+               projectmanager_id):
+     7: <br>
+     8: <%=@project.address%>
+     9: <br>
+    10: <%=@project.project_manager.name%>
+    11: <br>
+    12: <%=@project.company.name%>
+    13: 
+  
+app/views/projects/show.html.erb:10:in `_app_views_projects_show_html_erb__2824984478357442892_70325430895720'
+Started GET "/projects/2" for ::1 at 2019-09-14 11:24:37 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:18
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (5077.7ms)
+Completed 500 Internal Server Error in 5080ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `project_manager' for #<Project:0x00007febcdad74e0>
+Did you mean?  projectmanager
+               projectmanager=
+               projectmanager_id):
+     7: <br>
+     8: <%=@project.address%>
+     9: <br>
+    10: <%=@project.project_manager.name%>
+    11: <br>
+    12: <%=@project.company.name%>
+    13: 
+  
+app/views/projects/show.html.erb:10:in `_app_views_projects_show_html_erb__2824984478357442892_70325372416440'
+Started GET "/projects/2" for ::1 at 2019-09-14 11:26:30 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:19
+  Rendering projects/show.html.erb within layouts/application
+Started GET "/projects/2" for ::1 at 2019-09-14 11:26:45 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:19
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mProjectmanager Load (0.1ms)[0m  [1m[34mSELECT  "projectmanagers".* FROM "projectmanagers" WHERE "projectmanagers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ (pry):2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ (pry):3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ (pry):4
