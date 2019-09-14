@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 resources :users
 resources :companies
 resources :assets
+resources :projects
 
 
   get    '/signin',   to: 'sessions#new'

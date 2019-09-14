@@ -4,7 +4,7 @@ class CreateProjects < ActiveRecord::Migration[5.2]
       t.string  :name
       t.string  :client_name
       t.string  :address
-      t.string  :project_manager
+      t.belongs_to  :projectmanager, foreign_key: true
       t.belongs_to  :company, foreign_key: true
       t.timestamps
     end
