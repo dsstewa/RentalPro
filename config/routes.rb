@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
 resources :users
 resources :companies
-resources :assets
+resources :equipment
 resources :projects
 
 

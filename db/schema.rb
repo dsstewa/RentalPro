@@ -10,27 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_14_154534) do
-
-  create_table "assets", force: :cascade do |t|
-    t.string "name"
-    t.boolean "osr", default: false
-    t.string "rental_company"
-    t.string "make"
-    t.string "type"
-    t.string "eqclass"
-    t.float "rental_rate_day"
-    t.float "rental_rate_week"
-    t.float "rental_rate_month"
-    t.float "discount"
-    t.string "address"
-    t.integer "company_id"
-    t.integer "project_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["company_id"], name: "index_assets_on_company_id"
-    t.index ["project_id"], name: "index_assets_on_project_id"
-  end
+ActiveRecord::Schema.define(version: 2019_09_14_211934) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -38,6 +18,20 @@ ActiveRecord::Schema.define(version: 2019_09_14_154534) do
     t.string "phone_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "equipment", force: :cascade do |t|
+    t.string "name"
+    t.string "rental_company"
+    t.string "make"
+    t.string "machine_type"
+    t.float "rental_rate_day"
+    t.integer "company_id"
+    t.integer "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["company_id"], name: "index_equipment_on_company_id"
+    t.index ["project_id"], name: "index_equipment_on_project_id"
   end
 
   create_table "projectmanagers", force: :cascade do |t|
