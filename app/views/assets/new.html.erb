@@ -31,8 +31,8 @@
   <%= u.label :address%>
   <%= u.text_field :address%>
   <br>
-  <%= u.label "Please select your company"%>
-  <%= u.collection_select :project_id, Project.all, :id, :name %>
+  <%= u.label "Please select your Project"%>
+  <%= u.collection_select :project_id, company_projects, :id, :name %>
   <br>
   <%= u.hidden_field :company_id, value: current_user.company.id%>
 
