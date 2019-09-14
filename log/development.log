@@ -7395,3 +7395,1762 @@ Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.5ms)
 Completed 200 OK in 177037ms (Views: 177033.7ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/" for ::1 at 2019-09-14 12:37:25 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 22ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:37:25 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (17.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 329ms (Views: 326.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 12:37:28 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:37:28 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 12:37:29 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:37:29 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (10.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 12:37:30 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:37:30 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 12:37:30 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:37:30 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 57ms (Views: 54.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 12:37:31 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:37:31 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 12:37:31 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:37:31 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (9.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 12:37:32 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:37:32 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (5.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:46:32 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/views/users/show.html.erb:8: syntax error, unexpected tIVAR, expecting do or '{' or '('
+...dit User Data", user_path @user );@output_buffer.safe_append...
+...                          ^~~~~):
+  
+app/views/users/show.html.erb:8: syntax error, unexpected tIVAR, expecting do or '{' or '('
+Started GET "/users/2" for ::1 at 2019-09-14 12:47:31 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/views/users/show.html.erb:8: syntax error, unexpected tIVAR, expecting do or '{' or '('
+...dit User Data", user_path @user );@output_buffer.safe_append...
+...                          ^~~~~):
+  
+app/views/users/show.html.erb:8: syntax error, unexpected tIVAR, expecting do or '{' or '('
+Started GET "/users/2" for ::1 at 2019-09-14 12:47:45 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/views/users/show.html.erb:9: syntax error, unexpected tIVAR, expecting do or '{' or '('
+...dit User Data", user_path @user );@output_buffer.safe_append...
+...                          ^~~~~):
+  
+app/views/users/show.html.erb:9: syntax error, unexpected tIVAR, expecting do or '{' or '('
+Started GET "/users/2" for ::1 at 2019-09-14 12:47:57 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/views/users/show.html.erb:9: syntax error, unexpected tIVAR, expecting do or '{' or '('
+...dit User Data", user_path @user );
+...                          ^~~~~):
+  
+app/views/users/show.html.erb:9: syntax error, unexpected tIVAR, expecting do or '{' or '('
+Started GET "/users/2" for ::1 at 2019-09-14 12:48:39 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/views/users/show.html.erb:9: syntax error, unexpected tIVAR, expecting do or '{' or '('
+...ser Data", edit_user_path @user );
+...                          ^~~~~):
+  
+app/views/users/show.html.erb:9: syntax error, unexpected tIVAR, expecting do or '{' or '('
+Started GET "/users/2" for ::1 at 2019-09-14 12:48:52 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (71669.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 71949ms (Views: 71946.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:50:08 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/views/users/show.html.erb:8: syntax error, unexpected tIVAR, expecting do or '{' or '('
+...ser Data", edit_user_path @user );@output_buffer.safe_append...
+...                          ^~~~~):
+  
+app/views/users/show.html.erb:8: syntax error, unexpected tIVAR, expecting do or '{' or '('
+Started GET "/users/2" for ::1 at 2019-09-14 12:51:23 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:51:24 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:51:24 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:51:32 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:51:44 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:51:45 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:51:46 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2/edit" for ::1 at 2019-09-14 12:51:52 -0600
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: 
+    2: <h1> Edit the Users Data </h1>
+    3: 
+    4: <%= form_for @user do |u|%>
+    5:   <%= u.label :name%>
+    6:   <%= u.text_field :name%>
+    7:   <br>
+  
+app/views/users/edit.html.erb:4:in `_app_views_users_edit_html_erb__54886653976289794_70262237543100'
+Started GET "/users/2/edit" for ::1 at 2019-09-14 12:52:23 -0600
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/views/users/edit.html.erb:21
+  Rendered users/edit.html.erb within layouts/application (23.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 73ms (Views: 59.3ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/users/2" for ::1 at 2019-09-14 12:52:35 -0600
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sruQFZlWUx0qF7GYoFtb1GAVR442sM2kcfG8ieZTSdLHqKhLP0BNpyAk3CEWZccrL1AEwmpAmJ5ES/QG0Qu6Zw==", "user"=>{"name"=>"Bill Ron", "phone_number"=>"12314", "email"=>"bill@bill.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "company_id"=>"1"}, "commit"=>"Update User", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "password_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password_digest", "$2a$12$R23B6A02Htv4jWeR8Fg4N.1nQouMDS/e.SvFKNntmJOsSfPPRJlLK"], ["updated_at", "2019-09-14 18:52:35.260893"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:33
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:33
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 238ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:52:35 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2/edit" for ::1 at 2019-09-14 12:52:40 -0600
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/views/users/edit.html.erb:21
+  Rendered users/edit.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 12:52:43 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:52:43 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (10.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/signout" for ::1 at 2019-09-14 12:52:51 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1X9C9Dos6WCZua4IpXDG8GqQWm79LZJyl2XI//2aqzCgbHqqnDr32pOKw7ETTloPJdUZIqHdx0ii34BwysJYhQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 12:52:51 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-09-14 12:52:53 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/views/users/new.html.erb:20
+  Rendered users/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/companies/new" for ::1 at 2019-09-14 12:52:55 -0600
+Processing by CompaniesController#new as HTML
+  Rendering companies/new.html.erb within layouts/application
+  Rendered companies/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies" for ::1 at 2019-09-14 12:53:09 -0600
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QZHuI7zwxn+EYcvM580qD02FoKI80i8dnn8KMajgb3yHM5p1iFEBFaxZW6/7HueipV7C9OpeFf5pc9Yim1DPWw==", "company"=>{"name"=>"ESCO Construction", "address"=>"1 Battle Creek drive", "phone_number"=>"2334567890"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/companies_controller.rb:9
+  [1m[36mCompany Create (0.5ms)[0m  [1m[32mINSERT INTO "companies" ("name", "address", "phone_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ESCO Construction"], ["address", "1 Battle Creek drive"], ["phone_number", "2334567890"], ["created_at", "2019-09-14 18:53:09.609054"], ["updated_at", "2019-09-14 18:53:09.609054"]]
+  ↳ app/controllers/companies_controller.rb:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/companies_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 12:53:09 -0600
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for ::1 at 2019-09-14 12:53:10 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for ::1 at 2019-09-14 12:53:15 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x0YeyIDkdhoFOwuVz3DjkM0i5O3NtghjUsgMZF7Zb0sdN8fDWZpkDUiEmgpRpTiolwiwgJEQHh+Rn1mWoz5XTg==", "user"=>{"email"=>"bill@bill.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "bill@bill.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 230ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:53:16 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2/edit" for ::1 at 2019-09-14 12:53:17 -0600
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  ↳ app/views/users/edit.html.erb:21
+  Rendered users/edit.html.erb within layouts/application (7.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/users/2" for ::1 at 2019-09-14 12:53:20 -0600
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KQjV1mqRdoTtCNSAHlJgSiMU3XAiU7sySTuaEBkRA2oI5ClnCB+k6Wyj7Ik3u39rOS50cSMoUO7he4tTwfwbFA==", "user"=>{"name"=>"Bill Ron", "phone_number"=>"12314", "email"=>"bill@bill.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "company_id"=>"2"}, "commit"=>"Update User", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "company_id" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["company_id", 2], ["updated_at", "2019-09-14 18:53:20.318493"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:33
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:33
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 10ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 12:53:20 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 12:53:40 -0600
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for ProjectsController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/projects" for ::1 at 2019-09-14 12:54:35 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 44ms (Views: 38.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:03:03 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:03:04 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:03:05 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:03:05 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:03:05 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 13:03:05 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:03:05 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (11.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 13:03:07 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:03:07 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 13:03:07 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:03:07 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 13:03:07 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:03:07 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (7.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:05:22 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (9.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ (pry):10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ (pry):11
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."company_id" = ?[0m  [["company_id", 2]]
+  ↳ app/helpers/projects_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ (pry):12
+Completed 200 OK in 153281ms (Views: 153266.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:08:32 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 7969ms (Views: 7967.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:08:54 -0600
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/helpers/projects_helper.rb:6: unterminated regexp meets end of file
+/Users/davidstewart/Development/code/RentalPro/app/helpers/projects_helper.rb:6: syntax error, unexpected end-of-input, expecting end):
+  
+app/helpers/projects_helper.rb:6: unterminated regexp meets end of file
+app/helpers/projects_helper.rb:6: syntax error, unexpected end-of-input, expecting end
+app/controllers/application_controller.rb:2:in `<main>'
+app/controllers/projects_controller.rb:1:in `<main>'
+Started GET "/projects" for ::1 at 2019-09-14 13:09:07 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:09:10 -0600
+Processing by ProjectsController#index as HTML
+  Parameters: {"authenticity_token"=>"E4K+B8q1+KjZ/gU4pOK8yeIUvk9ihpiQ3VobjBsWCbJmkYZZbKPmEtPNaIES3CA2rVH9Az52zaro4FMDLE76Bw=="}
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:10:33 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 45ms (Views: 39.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:10:39 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:10:40 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:10:40 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:10:40 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:10:40 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:10:40 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:10:46 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:30 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 39ms (Views: 35.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:31 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:31 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:32 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:32 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:32 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:32 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:32 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:32 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:33 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:33 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:33 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:33 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:33 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:34 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:11:34 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 13:12:10 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:12:10 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (9.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for ::1 at 2019-09-14 13:12:13 -0600
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/projects/new.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/new.html.erb:21
+  Rendered projects/new.html.erb within layouts/application (5.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 70ms (Views: 48.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/projects" for ::1 at 2019-09-14 13:12:30 -0600
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x0ey2HhlSBKSCbymjO1bFnjvQw+zaVP/H/x8CGt08FkgU8gEZwdd3hOVnfP/Wc8CY1Y60tjH56d7zl/Tmu1g7g==", "project"=>{"name"=>"Sylvan Lake Park 2", "client_name"=>"CPW", "address"=>"2131 Brush Creek", "projectmanager_attributes"=>{"user_id"=>"1"}, "company_id"=>"2"}, "commit"=>"Create Project"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[36mProjectmanager Create (1.2ms)[0m  [1m[32mINSERT INTO "projectmanagers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2019-09-14 19:12:30.172735"], ["updated_at", "2019-09-14 19:12:30.172735"]]
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[36mProject Create (0.7ms)[0m  [1m[32mINSERT INTO "projects" ("name", "client_name", "address", "projectmanager_id", "company_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sylvan Lake Park 2"], ["client_name", "CPW"], ["address", "2131 Brush Creek"], ["projectmanager_id", 5], ["company_id", 2], ["created_at", "2019-09-14 19:12:30.174848"], ["updated_at", "2019-09-14 19:12:30.174848"]]
+  ↳ app/controllers/projects_controller.rb:12
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/projects_controller.rb:12
+Redirected to http://localhost:3000/projects/5
+Completed 302 Found in 15ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/projects/5" for ::1 at 2019-09-14 13:12:30 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/projects_controller.rb:18
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."company_id" = ?[0m  [["company_id", 1]]
+  ↳ app/controllers/projects_controller.rb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ (pry):16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ (pry):17
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."company_id" = ?[0m  [["company_id", 2]]
+  ↳ app/controllers/projects_controller.rb:18
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:19
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:3
+  [1m[36mProjectmanager Load (0.1ms)[0m  [1m[34mSELECT  "projectmanagers".* FROM "projectmanagers" WHERE "projectmanagers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/projectmanager.rb:6
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/show.html.erb:5
+  Rendered projects/show.html.erb within layouts/application (3.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 245106ms (Views: 30.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:18:28 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/views/projects/index.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+... link_to p.name, project_path p );@output_buffer.safe_append...
+...                              ^):
+  
+app/views/projects/index.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+Started GET "/projects" for ::1 at 2019-09-14 13:18:37 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>You have reached the Projects Page!</h1>
+    2: 
+    3: <% @project.each do |p|%>
+    4:     <%= binding.pry %>
+    5: <%end%>
+  
+app/views/projects/index.html.erb:3:in `_app_views_projects_index_html_erb__2497639066051244310_70262233566380'
+Started GET "/projects" for ::1 at 2019-09-14 13:18:43 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:3
+Started GET "/projects" for ::1 at 2019-09-14 13:19:00 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/views/projects/index.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+... link_to p.name, project_path p );@output_buffer.safe_append...
+...                              ^):
+  
+app/views/projects/index.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+Started GET "/projects" for ::1 at 2019-09-14 13:19:10 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:3
+Started GET "/projects" for ::1 at 2019-09-14 13:20:05 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/davidstewart/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/davidstewart/Development/code/RentalPro/app/views/projects/index.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+... link_to p.name, project_path p );@output_buffer.safe_append...
+...                              ^):
+  
+app/views/projects/index.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+Started GET "/projects" for ::1 at 2019-09-14 13:20:17 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:3
+  Rendered projects/index.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"projects"}, missing required keys: [:id]):
+    1: <h1>You have reached the Projects Page!</h1>
+    2: 
+    3: <% @projects.each do |p|%>
+    4:     <%= link_to p.name, project_path %>
+    5: <%end%>
+  
+app/views/projects/index.html.erb:4:in `block in _app_views_projects_index_html_erb__3740961288935099010_70236755673460'
+app/views/projects/index.html.erb:3:in `_app_views_projects_index_html_erb__3740961288935099010_70236755673460'
+Started GET "/projects" for ::1 at 2019-09-14 13:20:34 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:3
+  Rendered projects/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 301ms (Views: 299.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:20:43 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:3
+  Rendered projects/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:21:21 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:1
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:3
+  Rendered projects/index.html.erb within layouts/application (25.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:22:40 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:1
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:3
+  Rendered projects/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:22:41 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:1
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:3
+  Rendered projects/index.html.erb within layouts/application (2.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:22:42 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:1
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:3
+  Rendered projects/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:22:42 -0600
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:1
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:3
+  Rendered projects/index.html.erb within layouts/application (20.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/5" for ::1 at 2019-09-14 13:22:47 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:18
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."company_id" = ? LIMIT ?[0m  [["company_id", 2], ["LIMIT", 11]]
+  ↳ /Users/davidstewart/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered projects/show.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `company' for #<Project::ActiveRecord_Relation:0x00007fc288dc31b8>
+Did you mean?  compact):
+    1: <h1> Project Show Page </h1>
+    2: <br> Company Name:
+    3: <%=@project.company.name%>
+    4: <br> Project Manager:
+    5: <%= link_to @project.projectmanager.name, user_path(@project.projectmanager.user)%>
+    6: <br> Project Name:
+  
+app/views/projects/show.html.erb:3:in `_app_views_projects_show_html_erb___1228827714731660333_70236748254200'
+Started GET "/projects" for ::1 at 2019-09-14 13:24:06 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:22
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:1
+  Rendered projects/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>You have reached the <%=current_user.company.name%> Project's Page!</h1>
+    2: 
+    3: <% @projects.each do |p|%>
+    4:   <br>  <%= link_to p.name, project_path(p) %>
+    5: <%end%>
+  
+app/views/projects/index.html.erb:3:in `_app_views_projects_index_html_erb__3740961288935099010_70236799766140'
+Started GET "/projects" for ::1 at 2019-09-14 13:24:11 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:22
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:1
+  Rendered projects/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>You have reached the <%=current_user.company.name%> Project's Page!</h1>
+    2: 
+    3: <% @projects.each do |p|%>
+    4:   <br>  <%= link_to p.name, project_path(p) %>
+    5: <%end%>
+  
+app/views/projects/index.html.erb:3:in `_app_views_projects_index_html_erb__3740961288935099010_70236732126920'
+Started GET "/" for ::1 at 2019-09-14 13:24:17 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:24:17 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 13:24:19 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:24:19 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 13:24:20 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:24:20 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 13:24:20 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:24:20 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 13:24:20 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:24:20 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 36ms (Views: 28.4ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 13:24:20 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:24:20 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 13:24:20 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:24:20 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-09-14 13:24:20 -0600
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-09-14 13:24:20 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:2
+  Rendered users/show.html.erb within layouts/application (9.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2019-09-14 13:24:32 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:22
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:1
+  Rendered projects/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>You have reached the <%=current_user.company.name%> Project's Page!</h1>
+    2: 
+    3: <% @projects.each do |p|%>
+    4:   <br>  <%= link_to p.name, project_path(p) %>
+    5: <%end%>
+  
+app/views/projects/index.html.erb:3:in `_app_views_projects_index_html_erb__3740961288935099010_70236793399460'
+Started GET "/projects" for ::1 at 2019-09-14 13:24:43 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:22
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:1
+  Rendered projects/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>You have reached the <%=current_user.company.name%> Project's Page!</h1>
+    2: 
+    3: <% @projects.each do |p|%>
+    4:   <br>  <%= link_to p.name, project_path(p) %>
+    5: <%end%>
+  
+app/views/projects/index.html.erb:3:in `_app_views_projects_index_html_erb__3740961288935099010_70236757202440'
+Started GET "/projects" for ::1 at 2019-09-14 13:24:50 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:22
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:1
+  Rendered projects/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>You have reached the <%=current_user.company.name%> Project's Page!</h1>
+    2: 
+    3: <% @projects.each do |p|%>
+    4:   <br>  <%= link_to p.name, project_path(p) %>
+    5: <%end%>
+  
+app/views/projects/index.html.erb:3:in `_app_views_projects_index_html_erb__3740961288935099010_70236785961120'
+Started GET "/projects" for ::1 at 2019-09-14 13:25:02 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:22
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+  [1m[36mCACHE Company Load (0.0ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:1
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."company_id" = ?[0m  [["company_id", 2]]
+  ↳ app/views/projects/index.html.erb:3
+  Rendered projects/index.html.erb within layouts/application (8.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11
+Completed 200 OK in 57ms (Views: 32.1ms | ActiveRecord: 1.8ms)
+
+

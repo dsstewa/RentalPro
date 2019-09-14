@@ -1,0 +1,5 @@
+<h1>You have reached the <%=current_user.company.name%> Project's Page!</h1>
+
+<% @projects.each do |p|%>
+  <br>  <%= link_to p.name, project_path(p) %>
+<%end%>

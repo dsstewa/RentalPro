@@ -15,9 +15,15 @@ class ProjectsController < ApplicationController
     end
 
     def show
-        @project = Project.find_by_id(params[:id])
+        @projects = Project.where(company_id: current_user.company.id)
     end
-    
+     
+    def index
+        @projects = Project.where(company_id: current_user.company.id)
+    end
+
+
+
     private 
 
     def project_params
