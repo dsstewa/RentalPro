@@ -7,7 +7,6 @@ class CreateEquipment < ActiveRecord::Migration[5.2]
       t.string  :machine_type
       t.float   :rental_rate_day
       t.belongs_to  :company, foreign_key: true
-      t.belongs_to  :project, foreign_key: true
       t.timestamps
     end
   end

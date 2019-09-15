@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ProjectmanagerTest < ActiveSupport::TestCase
+class RentalTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

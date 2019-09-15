@@ -12,8 +12,9 @@ class EquipmentController < ApplicationController
 
 
   def index
-    binding.pry
+    
     @projects = Project.where(company_id: current_user.company_id)
+    @equipment = Equipment.where(company_id: current_user.company_id)
   end
 
 

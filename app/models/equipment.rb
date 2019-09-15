@@ -1,4 +1,5 @@
 class Equipment < ApplicationRecord
     belongs_to :company
-    belongs_to :project
+    has_many :rentals
+    has_many :customers, through: :rentals
 end

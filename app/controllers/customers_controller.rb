@@ -1,7 +1,7 @@
-class ProjectsController < ApplicationController
+class CustomersController < ApplicationController
     
     def new
-        @project = Project.new
+        @customer = Customer.new
         @project.build_projectmanager
         
         
@@ -16,10 +16,12 @@ class ProjectsController < ApplicationController
 
     def show
         @project = @project = Project.find_by_id(params[:id])
+        binding.pry
     end
      
     def index
         @projects = Project.where(company_id: current_user.company.id)
+
     end
 
 

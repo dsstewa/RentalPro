@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_14_211934) do
+ActiveRecord::Schema.define(version: 2019_09_14_235723) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -27,30 +27,30 @@ ActiveRecord::Schema.define(version: 2019_09_14_211934) do
     t.string "machine_type"
     t.float "rental_rate_day"
     t.integer "company_id"
-    t.integer "project_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["company_id"], name: "index_equipment_on_company_id"
-    t.index ["project_id"], name: "index_equipment_on_project_id"
-  end
-
-  create_table "projectmanagers", force: :cascade do |t|
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_projectmanagers_on_user_id"
   end
 
   create_table "projects", force: :cascade do |t|
     t.string "name"
     t.string "client_name"
     t.string "address"
-    t.integer "projectmanager_id"
     t.integer "company_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["company_id"], name: "index_projects_on_company_id"
-    t.index ["projectmanager_id"], name: "index_projects_on_projectmanager_id"
+  end
+
+  create_table "rentals", force: :cascade do |t|
+    t.integer "customer_id"
+    t.integer "equipment_id"
+    t.integer "rental_duration"
+    t.string "project_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["customer_id"], name: "index_rentals_on_customer_id"
+    t.index ["equipment_id"], name: "index_rentals_on_equipment_id"
   end
 
   create_table "sessions", force: :cascade do |t|
