@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(version: 2019_09_14_235723) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "customers", force: :cascade do |t|
+    t.string "name"
+    t.string "phone_number"
+    t.string "address"
+    t.integer "company_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["company_id"], name: "index_customers_on_company_id"
+  end
+
   create_table "equipment", force: :cascade do |t|
     t.string "name"
     t.string "rental_company"
@@ -30,16 +40,6 @@ ActiveRecord::Schema.define(version: 2019_09_14_235723) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["company_id"], name: "index_equipment_on_company_id"
-  end
-
-  create_table "projects", force: :cascade do |t|
-    t.string "name"
-    t.string "client_name"
-    t.string "address"
-    t.integer "company_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["company_id"], name: "index_projects_on_company_id"
   end
 
   create_table "rentals", force: :cascade do |t|

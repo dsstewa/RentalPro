@@ -12,9 +12,8 @@ class EquipmentController < ApplicationController
 
 
   def index
+    @equipment = Equipment.all
     
-    @projects = Project.where(company_id: current_user.company_id)
-    @equipment = Equipment.where(company_id: current_user.company_id)
   end
 
 
